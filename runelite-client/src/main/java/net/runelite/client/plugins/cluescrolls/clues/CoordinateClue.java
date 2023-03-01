@@ -152,7 +152,7 @@ public class CoordinateClue extends ClueScroll implements LocationClueScroll
 		.put(new WorldPoint(2892, 3675, 0), new CoordinateClueInfo("On the summit of Trollheim.", SARADOMIN_WIZARD))
 		.put(new WorldPoint(3168, 3677, 0), new CoordinateClueInfo("Wilderness. Graveyard of Shadows.", ZAMORAK_WIZARD))
 		.put(new WorldPoint(2853, 3690, 0), new CoordinateClueInfo("Entrance to the troll Stronghold.", SARADOMIN_WIZARD))
-		.put(new WorldPoint(3305, 3692, 0), new CoordinateClueInfo("Wilderness. West of eastern green dragon.", ZAMORAK_WIZARD))
+		.put(new WorldPoint(3305, 3692, 0), new CoordinateClueInfo("Wilderness. West of eastern green dragons.", ZAMORAK_WIZARD))
 		.put(new WorldPoint(3055, 3696, 0), new CoordinateClueInfo("Wilderness. Bandit Camp.", ZAMORAK_WIZARD))
 		.put(new WorldPoint(3302, 3696, 0), new CoordinateClueInfo("Wilderness. West of eastern green dragon.", ZAMORAK_WIZARD))
 		.put(new WorldPoint(1479, 3699, 0), new CoordinateClueInfo("Lizardman Canyon (DJR).", SARADOMIN_WIZARD))
