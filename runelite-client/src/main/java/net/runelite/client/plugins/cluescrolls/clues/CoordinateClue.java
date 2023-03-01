@@ -143,7 +143,7 @@ public class CoordinateClue extends ClueScroll implements LocationClueScroll
 		.put(new WorldPoint(3440, 3341, 0), new CoordinateClueInfo("Nature Spirit's grotto (BIP).", SARADOMIN_WIZARD))
 		.put(new WorldPoint(2763, 2974, 0), new CoordinateClueInfo("Cairn Isle, west of Shilo Village (CKR).", SARADOMIN_WIZARD))
 		.put(new WorldPoint(3138, 2969, 0), new CoordinateClueInfo("West of Bandit Camp in Kharidian Desert.", SARADOMIN_WIZARD))
-		.put(new WorldPoint(2924, 2963, 0), new CoordinateClueInfo("On the southern part of eastern Karamja.", SARADOMIN_WIZARD))
+		.put(new WorldPoint(2924, 2963, 0), new CoordinateClueInfo("On the southern part of eastern Karamja, west of the gnome glider.", SARADOMIN_WIZARD))
 		.put(new WorldPoint(2838, 2914, 0), new CoordinateClueInfo("Kharazi Jungle, near water pool (CKR).", SARADOMIN_WIZARD))
 		.put(new WorldPoint(3441, 3419, 0), new CoordinateClueInfo("Mort Myre Swamp (BKR).", SARADOMIN_WIZARD))
 		.put(new WorldPoint(2950, 2902, 0), new CoordinateClueInfo("South-east of Kharazi Jungle.", SARADOMIN_WIZARD))
