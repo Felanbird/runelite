@@ -257,11 +257,15 @@ public class SlayerPlugin extends Plugin
 	{
 		switch (event.getGameState())
 		{
+			// client (or with CONNECTION_LOST, the server...) will soon zero the slayer varps.
+			// zero task/amount so that this doesn't cause the plugin to reset the task, which
+			// would forget the initial amount. The vars are then resynced shortly after
 			case HOPPING:
 			case LOGGING_IN:
+			case CONNECTION_LOST:
 				taskName = "";
 				amount = 0;
-				loginFlag = true;
+				loginFlag = true; // to reinitialize initialAmount and avoid re-adding the infobox
 				targets.clear();
 				break;
 		}
@@ -486,11 +490,36 @@ public class SlayerPlugin extends Plugin
 	{
 		if (menuOptionClicked.getMenuAction() == MenuAction.CC_OP && menuOptionClicked.getMenuOption().equals("Check"))
 		{
-			Widget w = client.getWidget(menuOptionClicked.getParam1()).getChild(menuOptionClicked.getParam0());
-			int itemId = ItemVariationMapping.map(w.getItemId());
+			Widget w = client.getWidget(menuOptionClicked.getParam1());
+			if (w == null)
+			{
+				return;
+			}
+
+			if (menuOptionClicked.getParam0() != -1)
+			{
+				w = w.getChild(menuOptionClicked.getParam0());
+				if (w == null)
+				{
+					return;
+				}
+			}
+
+			// hack around equipment interface which has the item on a child component
+			int itemId = w.getItemId();
+			for (Widget child : w.getDynamicChildren())
+			{
+				if (itemId == -1)
+				{
+					itemId = child.getItemId();
+				}
+			}
+
+			itemId = ItemVariationMapping.map(itemId);
 			if (itemId == ItemID.SLAYER_HELMET || itemId == ItemID.SLAYER_RING_8
 				|| itemId == ItemID.ENCHANTED_GEM)
 			{
+				log.debug("Checked slayer task");
 				infoTimer = Instant.now();
 				addCounter();
 			}
