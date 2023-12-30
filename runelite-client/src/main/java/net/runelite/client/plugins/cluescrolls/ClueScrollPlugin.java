@@ -688,6 +688,27 @@ public class ClueScrollPlugin extends Plugin
 			{
 				resetClue(true);
 			}
+			// (felanbird): DEBUGGING, REMOVE
+			if ("1".equals(text))
+			{
+				ClueScroll clueScroll = findClueScroll("Beckon on the east coast of the Kharazi Jungle. Beware of double agents! Equip any vestment stole and a heraldic rune shield.");
+				updateClue(clueScroll);
+			}
+			if ("2".equals(text))
+			{
+				ClueScroll clueScroll = findClueScroll("Cheer at the top of the agility pyramid. Beware of double agents! Equip a blue mystic robe top, and any rune heraldic shield.");
+				updateClue(clueScroll);
+			}
+			if ("3".equals(text))
+			{
+				ClueScroll clueScroll = findClueScroll("Jig at Jiggig. Beware of double agents! Equip a Rune spear, rune platelegs and any rune heraldic helm.");
+				updateClue(clueScroll);
+			}
+			if ("4".equals(text))
+			{
+				ClueScroll clueScroll = findClueScroll("Jump for joy in the Ancient Cavern. Equip a granite shield, splitbark body and any rune heraldic helm.");
+				updateClue(clueScroll);
+			}
 			else
 			{
 				ClueScroll clueScroll = findClueScroll(text);
