@@ -41,15 +41,15 @@ import net.runelite.client.ui.overlay.components.PanelComponent;
 @Getter
 public class ItemVariations extends ClueScroll implements LocationClueScroll
 {
-	private static final AnyRequirementCollection ANY_SLAYER_HELMET = any("Any slayer helmet",
+	static final AnyRequirementCollection ANY_SLAYER_HELMET = any("Any slayer helmet",
 		ItemVariationMapping.getVariations(SLAYER_HELMET).stream()
 			.map(ItemRequirements::item)
 			.toArray(SingleItemRequirement[]::new));
-	private static final AnyRequirementCollection ANY_RING_OF_WEALTH = any("Any ring of wealth",
+	static final AnyRequirementCollection ANY_RING_OF_WEALTH = any("Any ring of wealth",
 		ItemVariationMapping.getVariations(RING_OF_WEALTH).stream()
 			.map(ItemRequirements::item)
 			.toArray(SingleItemRequirement[]::new));
-	private static final AnyRequirementCollection ANY_PHARAOHS_SCEPTRE = any("Pharaoh's sceptre",
+	static final AnyRequirementCollection ANY_PHARAOHS_SCEPTRE = any("Pharaoh's sceptre",
 		ItemVariationMapping.getVariations(PHARAOHS_SCEPTRE).stream()
 			.map(ItemRequirements::item)
 			.toArray(SingleItemRequirement[]::new));
