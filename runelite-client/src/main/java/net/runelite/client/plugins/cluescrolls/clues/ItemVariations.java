@@ -53,6 +53,23 @@ public class ItemVariations extends ClueScroll implements LocationClueScroll
 		ItemVariationMapping.getVariations(PHARAOHS_SCEPTRE).stream()
 			.map(ItemRequirements::item)
 			.toArray(SingleItemRequirement[]::new));
+	static final AnyRequirementCollection ANY_RUNE_HERALDIC_SHIELD = any("Rune shield (h)",
+		ItemVariationMapping.getVariations(RUNE_SHIELD_H1).stream()
+			.map(ItemRequirements::item)
+			.toArray(SingleItemRequirement[]::new));
+	static final AnyRequirementCollection ANY_RUNE_HERALDIC_HELM = any("Rune helm (h)",
+		ItemVariationMapping.getVariations(RUNE_FULL_HELM).stream()
+			.filter(itemId -> itemId != RUNE_FULL_HELM && itemId != RUNE_FULL_HELM_G && itemId != RUNE_FULL_HELM_T)
+			.map(ItemRequirements::item)
+			.toArray(SingleItemRequirement[]::new));
+	static final AnyRequirementCollection ANY_TEAM_CAPE = any("Any team cape",
+		Stream.of(
+				ItemVariationMapping.getVariations(TEAM1_CAPE).stream(),
+				Stream.of(TEAM_CAPE_I, TEAM_CAPE_X, TEAM_CAPE_ZERO))
+			.reduce(Stream::concat)
+			.orElseGet(Stream::empty)
+			.map(ItemRequirements::item)
+			.toArray(SingleItemRequirement[]::new));
 	static final AnyRequirementCollection ACTIVE_CRYSTAL_BOW_OR_BOW_OF_FAERDHINEN = any("Crystal Bow or Bow of Faerdhinen",
 		Stream.of(
 				ItemVariationMapping.getVariations(BOW_OF_FAERDHINEN_INACTIVE).stream(),
