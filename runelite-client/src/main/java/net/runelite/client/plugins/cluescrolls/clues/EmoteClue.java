@@ -54,7 +54,6 @@ import net.runelite.api.Varbits;
 import net.runelite.api.annotations.Varbit;
 import net.runelite.api.coords.LocalPoint;
 import net.runelite.api.coords.WorldPoint;
-import net.runelite.client.game.ItemVariationMapping;
 import static net.runelite.client.plugins.cluescrolls.ClueScrollOverlay.TITLED_CONTENT_COLOR;
 import net.runelite.client.plugins.cluescrolls.ClueScrollPlugin;
 import static net.runelite.client.plugins.cluescrolls.clues.Enemy.DOUBLE_AGENT_108;
@@ -65,15 +64,12 @@ import static net.runelite.client.plugins.cluescrolls.clues.emote.Emote.*;
 import net.runelite.client.plugins.cluescrolls.clues.emote.STASHUnit;
 import static net.runelite.client.plugins.cluescrolls.clues.emote.STASHUnit.SHANTAY_PASS;
 import static net.runelite.client.plugins.cluescrolls.clues.emote.STASHUnit.*;
-import net.runelite.client.plugins.cluescrolls.clues.item.AnyRequirementCollection;
 import net.runelite.client.plugins.cluescrolls.clues.item.ItemRequirement;
-import net.runelite.client.plugins.cluescrolls.clues.item.ItemRequirements;
 import static net.runelite.client.plugins.cluescrolls.clues.item.ItemRequirements.all;
 import static net.runelite.client.plugins.cluescrolls.clues.item.ItemRequirements.any;
 import static net.runelite.client.plugins.cluescrolls.clues.item.ItemRequirements.emptySlot;
 import static net.runelite.client.plugins.cluescrolls.clues.item.ItemRequirements.item;
 import static net.runelite.client.plugins.cluescrolls.clues.item.ItemRequirements.range;
-import net.runelite.client.plugins.cluescrolls.clues.item.SingleItemRequirement;
 import net.runelite.client.ui.FontManager;
 import net.runelite.client.ui.overlay.OverlayUtil;
 import net.runelite.client.ui.overlay.components.LineComponent;
@@ -83,28 +79,6 @@ import net.runelite.client.ui.overlay.components.TitleComponent;
 @Getter
 public class EmoteClue extends ClueScroll implements LocationClueScroll
 {
-	private static final AnyRequirementCollection ANY_SLAYER_HELMET = any("Any slayer helmet",
-		ItemVariationMapping.getVariations(SLAYER_HELMET).stream()
-			.map(ItemRequirements::item)
-			.toArray(SingleItemRequirement[]::new));
-	private static final AnyRequirementCollection ANY_RING_OF_WEALTH = any("Any ring of wealth",
-		ItemVariationMapping.getVariations(RING_OF_WEALTH).stream()
-			.map(ItemRequirements::item)
-			.toArray(SingleItemRequirement[]::new));
-	private static final AnyRequirementCollection ANY_PHARAOHS_SCEPTRE = any("Pharaoh's sceptre",
-		ItemVariationMapping.getVariations(PHARAOHS_SCEPTRE).stream()
-			.map(ItemRequirements::item)
-			.toArray(SingleItemRequirement[]::new));
-	static final AnyRequirementCollection ACTIVE_CRYSTAL_BOW_OR_BOW_OF_FAERDHINEN = any("Crystal Bow or Bow of Faerdhinen",
-		Stream.of(
-			ItemVariationMapping.getVariations(BOW_OF_FAERDHINEN_INACTIVE).stream(),
-			Stream.of(CRYSTAL_BOW, CRYSTAL_BOW_24123))
-			.reduce(Stream::concat)
-			.orElseGet(Stream::empty)
-			.filter(itemId -> itemId != BOW_OF_FAERDHINEN_INACTIVE)
-			.map(ItemRequirements::item)
-			.toArray(SingleItemRequirement[]::new));
-
 	static final List<EmoteClue> CLUES = ImmutableList.of(
 		new EmoteClue("Beckon on the east coast of the Kharazi Jungle. Beware of double agents! Equip any vestment stole and a heraldic rune shield.", "Kharazi Jungle", NORTHEAST_CORNER_OF_THE_KHARAZI_JUNGLE, new WorldPoint(2954, 2933, 0), DOUBLE_AGENT_108, BECKON, any("Any stole", item(GUTHIX_STOLE), item(SARADOMIN_STOLE), item(ZAMORAK_STOLE), item(ARMADYL_STOLE), item(BANDOS_STOLE), item(ANCIENT_STOLE)), any("Any heraldic rune shield", item(RUNE_SHIELD_H1), item(RUNE_SHIELD_H2), item(RUNE_SHIELD_H3), item(RUNE_SHIELD_H4), item(RUNE_SHIELD_H5))),
 		new EmoteClue("Cheer in the Barbarian Agility Arena. Headbang before you talk to me. Equip a steel platebody, maple shortbow and a Wilderness cape.", "Barbarian Outpost", BARBARIAN_OUTPOST_OBSTACLE_COURSE, new WorldPoint(2552, 3556, 0), CHEER, HEADBANG, item(STEEL_PLATEBODY), item(MAPLE_SHORTBOW), range("Any team cape", TEAM1_CAPE, TEAM50_CAPE)),
