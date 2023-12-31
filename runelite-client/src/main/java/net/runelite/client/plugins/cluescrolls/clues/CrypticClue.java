@@ -382,6 +382,8 @@ public class CrypticClue extends ClueScroll implements NpcClueScroll, ObjectClue
 			.build(),
 		CrypticClue.builder()
 			.text("A crate found in the tower of a church is your next location.")
+			//.location(new WorldPoint(2610, 3306, 0)) // highlight the latter to go up one plane
+			//.objectId(ObjectID.LADDER_16683)
 			.location(new WorldPoint(2612, 3304, 1))
 			.objectId(ObjectID.CRATE_357)
 			.solution("Climb the ladder and search the crates on the first floor in the Church in Ardougne.")
