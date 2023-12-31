@@ -301,6 +301,10 @@ public class CrypticClue extends ClueScroll implements NpcClueScroll, ObjectClue
 			.build(),
 		CrypticClue.builder()
 			.text("Search the crates in Draynor Manor.")
+			//.location(new WorldPoint(3108, 3362, 0)) // highlight the staircase to go up one plane
+			//.objectId(ObjectID.STAIRCASE_11498)
+			//.location(new WorldPoint(3104, 3363, 1)) // highlight the staircase to go up another plane
+			//.objectId(ObjectID.STAIRCASE_11511)
 			.location(new WorldPoint(3106, 3369, 2))
 			.objectId(ObjectID.CRATE_11485)
 			.solution("Top floor of the Draynor Manor.")
