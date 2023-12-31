@@ -370,6 +370,12 @@ public class CrypticClue extends ClueScroll implements NpcClueScroll, ObjectClue
 			.build(),
 		CrypticClue.builder()
 			.text("Search the crates in the Dwarven mine.")
+			// dwarven mine location
+			//.location(new WorldPoint(3019, 3450, 0)) // highlight the ladder to go down one plane
+			//.objectId(ObjectID.TRAPDOOR_11867) // this is a GroundObject
+			// falador location
+			//.location(new WorldPoint(3060, 3376, 0)) // highlight the staircase to go down one plane
+			//.objectId(ObjectID.STAIRCASE_16664)
 			.location(new WorldPoint(3035, 9849, 0))
 			.objectId(ObjectID.CRATE_357)
 			.solution("Search the crate in the room east of the Ice Mountain ladder entrance in the Drogo's Mining Emporium in the Dwarven Mine.")
