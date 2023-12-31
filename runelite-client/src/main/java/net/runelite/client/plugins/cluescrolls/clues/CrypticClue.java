@@ -699,11 +699,12 @@ public class CrypticClue extends ClueScroll implements NpcClueScroll, ObjectClue
 			.build(),
 		CrypticClue.builder()
 			.text("Surviving.")
-			.location(new WorldPoint(2983, 3338, 0)) // highlight Sir Vyvin
-			// .objectId(ObjectID.STAIRCASE_24067) // highlight the main stairs outside to go up 1 plane
-			// .location(new WorldPoint(2968, 3347, 0)) //
-			// .objectId(ObjectID.STAIRCASE_24077) // highlight the second set of stairs to go up another plane
-			// .location(new WorldPoint(2984, 3371, 1)) //
+			// this clue requires going up 2 sets of stairs
+			.location(new WorldPoint(2983, 3338, 0)) // possibly not needed due to STAIRCASE_24077 currently highlighting Sir Vyvin
+			//.objectId(ObjectID.STAIRCASE_24067) // highlight the main stairs outside to go up 1 plane
+			//.location(new WorldPoint(2970, 3347, 0)) // the other 2 tiles this staircase is on have un-clickable spots
+			//.objectId(ObjectID.STAIRCASE_24077) // highlight the second set of stairs to go up another plane
+			//.location(new WorldPoint(2984, 3337, 1))
 			.npc("Sir Vyvin")
 			.solution("Talk to Sir Vyvin on the second floor of Falador castle.")
 			.build(),
