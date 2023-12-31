@@ -105,6 +105,8 @@ public class CrypticClue extends ClueScroll implements NpcClueScroll, ObjectClue
 			.build(),
 		CrypticClue.builder()
 			.text("Search the crates in a bank in Varrock.")
+			//.location(new WorldPoint(3187, 3434, 0)) // highlight the stairs to go down one plane
+			//.objectId(ObjectID.STAIRCASE_11800)
 			.location(new WorldPoint(3187, 9825, 0))
 			.objectId(ObjectID.CRATE_5107)
 			.solution("Search in the basement of the West Varrock bank.")
