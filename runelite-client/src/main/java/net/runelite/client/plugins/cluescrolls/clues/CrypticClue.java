@@ -132,7 +132,9 @@ public class CrypticClue extends ClueScroll implements NpcClueScroll, ObjectClue
 			.build(),
 		CrypticClue.builder()
 			.text("Citric cellar.")
-			.location(new WorldPoint(2490, 3488, 0))
+			//.location(new WorldPoint(2466, 3495, 0)) // highlight the ladder to go up one plane
+			//.objectId(ObjectID.LADDER_16683) //
+			.location(new WorldPoint(2490, 3488, 0)) // probably change to plane 1
 			.npc("Heckel Funch")
 			.solution("Speak to Heckel Funch on the first floor in the Grand Tree.")
 			.build(),
