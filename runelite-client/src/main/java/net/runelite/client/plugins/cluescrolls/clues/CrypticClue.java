@@ -951,7 +951,7 @@ public class CrypticClue extends ClueScroll implements NpcClueScroll, ObjectClue
 			.build(),
 		CrypticClue.builder()
 			.text("Search the drawers upstairs in Falador's shield shop.")
-			//.location(new WorldPoint(2973, 3384, 0)) // highlights the stairs to go up one plane
+			//.location(new WorldPoint(2973, 3384, 0)) // highlight the stairs to go up one plane
 			//.objectId(ObjectID.STAIRCASE_24075)
 			.location(new WorldPoint(2971, 3386, 1))
 			.objectId(ObjectID.DRAWERS)
