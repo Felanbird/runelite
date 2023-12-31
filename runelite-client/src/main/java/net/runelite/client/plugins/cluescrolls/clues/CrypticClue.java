@@ -276,6 +276,8 @@ public class CrypticClue extends ClueScroll implements NpcClueScroll, ObjectClue
 			.build(),
 		CrypticClue.builder()
 			.text("My home is grey, and made of stone; A castle with a search for a meal. Hidden in some drawers I am, across from a wooden wheel.")
+			//.location(new WorldPoint(3204, 3208, 0)) // highlight the staircase to go up a plane, arrow is a little tricky here b/c it's a spiral staircase
+			//.objectId(ObjectID.STAIRCASE_16671)
 			.location(new WorldPoint(3213, 3216, 1))
 			.objectId(ObjectID.DRAWERS_5618)
 			.solution("Open the drawers inside the room with the spinning wheel on the first floor of Lumbridge Castle.")
