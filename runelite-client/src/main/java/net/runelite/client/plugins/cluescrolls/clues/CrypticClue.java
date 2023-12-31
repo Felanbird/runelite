@@ -189,6 +189,8 @@ public class CrypticClue extends ClueScroll implements NpcClueScroll, ObjectClue
 			.build(),
 		CrypticClue.builder()
 			.text("In a town where thieves steal from stalls, search for some drawers in the upstairs of a house near the bank.")
+			//.location(new WorldPoint(2617, 3323, 0)) // highlight the ladder to go up one plane
+			//.objectId(ObjectID.LADDER_16683)
 			.location(new WorldPoint(2611, 3324, 1))
 			.npc("Guard")
 			.npcRegion(10291)
