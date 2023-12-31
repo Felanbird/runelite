@@ -169,7 +169,7 @@ public class CoordinateClue extends ClueScroll implements LocationClueScroll
 		.put(new WorldPoint(3058, 3884, 0), new CoordinateClueInfo("Wilderness. Near runite ore north of Lava Maze.", ZAMORAK_WIZARD))
 		.put(new WorldPoint(3290, 3889, 0), new CoordinateClueInfo("Wilderness. Demonic Ruins.", ZAMORAK_WIZARD))
 		.put(new WorldPoint(3770, 3897, 0), new CoordinateClueInfo("Small Island north of Fossil Island.", SARADOMIN_WIZARD))
-		.put(new WorldPoint(2505, 3899, 0), new CoordinateClueInfo("Small Island north-west of Miscellania. (Accessible only through fairy ring AJS)", SARADOMIN_WIZARD))
+		.put(new WorldPoint(2505, 3899, 0), new CoordinateClueInfo("Small Island north-west of Miscellania. (Accessible only through Fairy Ring AJS.)", SARADOMIN_WIZARD))
 		.put(new WorldPoint(3285, 3942, 0), new CoordinateClueInfo("Wilderness. Rogues' Castle.", ZAMORAK_WIZARD))
 		.put(new WorldPoint(3159, 3959, 0), new CoordinateClueInfo("Wilderness. North of Deserted Keep, west of Resource Area.", ZAMORAK_WIZARD))
 		.put(new WorldPoint(3039, 3960, 0), new CoordinateClueInfo("Wilderness. Pirates' Hideout.", ZAMORAK_WIZARD))
