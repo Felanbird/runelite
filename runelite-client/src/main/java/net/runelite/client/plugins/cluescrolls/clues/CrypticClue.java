@@ -256,7 +256,7 @@ public class CrypticClue extends ClueScroll implements NpcClueScroll, ObjectClue
 			.build(),
 		CrypticClue.builder()
 			.text("Search chests found in the upstairs of shops in Port Sarim.")
-			//.location(new WorldPoint(3013, 3203, 0)) // highlight the ladder to go down up plane
+			//.location(new WorldPoint(3013, 3203, 0)) // highlight the ladder to go up a plane
 			//.objectId(ObjectID.LADDER_16683)
 			.location(new WorldPoint(3016, 3205, 1))
 			.objectId(ObjectID.CLOSED_CHEST_375)
