@@ -453,6 +453,8 @@ public class CrypticClue extends ClueScroll implements NpcClueScroll, ObjectClue
 		CrypticClue.builder()
 			.text("In a town where wizards are known to gather, search upstairs in a large house to the north.")
 			.location(new WorldPoint(2593, 3108, 1))
+			//.location(new WorldPoint(2597, 3107,0)) // highlight the ladder to go up one plane
+			//.objectId(ObjectID.LADDER_16683)
 			.npc("Man")
 			.npcRegion(10288)
 			.objectId(ObjectID.CLOSED_CHEST_375)
