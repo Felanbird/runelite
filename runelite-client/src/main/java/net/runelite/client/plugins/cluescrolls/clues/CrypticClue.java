@@ -460,7 +460,7 @@ public class CrypticClue extends ClueScroll implements NpcClueScroll, ObjectClue
 			.objectId(ObjectID.CLOSED_CHEST_375)
 			.solution("Search the chest upstairs in the house north of Yanille Wizard's Guild. Kill a man for the key.")
 			.build(),
-		CrypticClue.builder()
+		CrypticClue.builder() // todo: (felanbird) continue from here
 			.text("Probably filled with wizards socks.")
 			.location(new WorldPoint(3116, 9562, 0))
 			.npc("Wizard")
