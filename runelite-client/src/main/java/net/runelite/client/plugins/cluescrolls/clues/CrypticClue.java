@@ -470,6 +470,8 @@ public class CrypticClue extends ClueScroll implements NpcClueScroll, ObjectClue
 			.build(),
 		CrypticClue.builder()
 			.text("Even the seers say this clue goes right over their heads.")
+			//.location(new WorldPoint(2729, 3489, 0)) // highlight the wall to go up one plane
+			//.objectId(ObjectID.WALL_14927) // didn't test, took from Agility plugin
 			.location(new WorldPoint(2707, 3488, 2))
 			.objectId(ObjectID.CRATE_14934)
 			.solution("Search the crate on the Seers Agility Course in Seers Village")
