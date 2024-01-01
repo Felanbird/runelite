@@ -442,7 +442,11 @@ public class CrypticClue extends ClueScroll implements NpcClueScroll, ObjectClue
 			.build(),
 		CrypticClue.builder()
 			.text("I am the one who watches the giants. The giants in turn watch me. I watch with two while they watch with one. Come seek where I may be.")
-			.location(new WorldPoint(2840, 3538, 0))
+			// x: will be changed to 2839 in my upstream PR
+			.location(new WorldPoint(2840, 3538, 0)) // highlight the staircase to go up one plane
+			//.objectId(ObjectID.STAIRCASE_16671)
+			//.location(new WorldPoint(2839, 3538, 1)) // highlight the staircase to go up another plane
+			//.objectId(ObjectID.STAIRCASE_16672)
 			.npc("Kamfreena")
 			.solution("Speak to Kamfreena on the top floor of the Warriors' Guild.")
 			.build(),
