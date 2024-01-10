@@ -460,8 +460,10 @@ public class CrypticClue extends ClueScroll implements NpcClueScroll, ObjectClue
 			.objectId(ObjectID.CLOSED_CHEST_375)
 			.solution("Search the chest upstairs in the house north of Yanille Wizard's Guild. Kill a man for the key.")
 			.build(),
-		CrypticClue.builder() // todo: (felanbird) continue from here
+		CrypticClue.builder()
 			.text("Probably filled with wizards socks.")
+			//.location(new WorldPoint(3104, 3162, 0)) // highlight the ladder to go down one plane
+			//.objectId(ObjectID.LADDER_14108) // this is a GroundObject
 			.location(new WorldPoint(3116, 9562, 0))
 			.npc("Wizard")
 			.npcRegion(12337)
@@ -514,6 +516,8 @@ public class CrypticClue extends ClueScroll implements NpcClueScroll, ObjectClue
 			.build(),
 		CrypticClue.builder()
 			.text("Speak to Donovan, the Family Handyman.")
+			//.objectId(ObjectID.STAIRCASE_25682) // highlight the staircase to go up one plane
+			// x,y: will be changed to 2736,3581 in my upstream PR
 			.location(new WorldPoint(2736, 3581, 0))
 			.npc("Donovan the Family Handyman")
 			.solution("Donovan the Family Handyman is found on the first floor of Sinclair Mansion, north of Seers' Village. Fairy ring CJR.")
@@ -536,8 +540,8 @@ public class CrypticClue extends ClueScroll implements NpcClueScroll, ObjectClue
 			.objectId(ObjectID.CRATE_356)
 			.solution("Search the crate by the house at the northern point of the broken jungle fence in Tai Bwo Wannai.")
 			.build(),
-		CrypticClue.builder()
-			.text("This crate is mine, all mine, even if it is in the middle of the desert.")
+		CrypticClue.builder()  // todo: (felanbird) continue from here
+			.text("This crate is mine, all mine, even if it is in the middle of the desert.") 
 			.location(new WorldPoint(3289, 3022, 0))
 			.objectId(ObjectID.CRATE_18889)
 			.solution("Center of desert Mining Camp. Search the crates. Requires the metal key from Tourist Trap to enter.")
