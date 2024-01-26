@@ -79,6 +79,19 @@ public class ItemVariations extends ClueScroll implements LocationClueScroll
 			.filter(itemId -> itemId != BOW_OF_FAERDHINEN_INACTIVE)
 			.map(ItemRequirements::item)
 			.toArray(SingleItemRequirement[]::new));
+	static final AnyRequirementCollection DRAGON_OR_AVERNIC_DEFENDER = any("Dragon or Avernic Defender",
+		Stream.of(
+				ItemVariationMapping.getVariations(DRAGON_DEFENDER).stream(),
+				ItemVariationMapping.getVariations(AVERNIC_DEFENDER).stream(),
+				ItemVariationMapping.getVariations(GHOMMALS_AVERNIC_DEFENDER_5).stream())
+				// (felanbird): notes
+				// 20463 = DRAGON_DEFENDER_BROKEN
+				// 22441 = AVERNIC_DEFENDER_BROKEN
+			.reduce(Stream::concat)
+			.orElseGet(Stream::empty)
+			.filter(itemId -> itemId != DRAGON_DEFENDER_BROKEN && itemId != AVERNIC_DEFENDER_BROKEN)
+			.map(ItemRequirements::item)
+			.toArray(SingleItemRequirement[]::new));
 
 	@Override
 	public void makeOverlayHint(PanelComponent panelComponent, ClueScrollPlugin plugin)
