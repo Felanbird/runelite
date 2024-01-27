@@ -61,6 +61,18 @@ public class ItemVariations extends ClueScroll implements LocationClueScroll
 			.orElseGet(Stream::empty)
 			.map(ItemRequirements::item)
 			.toArray(SingleItemRequirement[]::new));
+	static final AnyRequirementCollection ANY_CHARGED_GLORY = any("Any Amulet of glory",
+		Stream.of( // TODO: Figure out of the clues that used charged glories actually work with trimmed ones,
+				// the wiki notes it as "An amulet of glory with any amount of charges or an amulet of eternal glory will work."
+				// but for clues where AMULET_OF_GLORY_T does not work, it's explicitly mentioned
+				// "Your amulet of glory must be uncharged in order to work. Amulet of glory (t) does not work for this clue step."
+				Stream.of(AMULET_OF_GLORY1, AMULET_OF_GLORY2, AMULET_OF_GLORY3, AMULET_OF_GLORY4, AMULET_OF_GLORY5,
+					AMULET_OF_GLORY5, AMULET_OF_GLORY6, AMULET_OF_GLORY_T1, AMULET_OF_GLORY_T2, AMULET_OF_GLORY_T3,
+					AMULET_OF_GLORY_T4, AMULET_OF_GLORY_T5,	AMULET_OF_GLORY_T6))
+			.reduce(Stream::concat)
+			.orElseGet(Stream::empty)
+			.map(ItemRequirements::item)
+			.toArray(SingleItemRequirement[]::new));
 	static final AnyRequirementCollection ACTIVE_CRYSTAL_BOW_OR_BOW_OF_FAERDHINEN = any("Crystal Bow or Bow of Faerdhinen",
 		Stream.of(
 				ItemVariationMapping.getVariations(BOW_OF_FAERDHINEN_INACTIVE).stream(),
