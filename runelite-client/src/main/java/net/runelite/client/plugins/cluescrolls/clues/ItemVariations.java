@@ -80,6 +80,19 @@ public class ItemVariations extends ClueScroll implements LocationClueScroll
 			.filter(itemId -> itemId != DRAGON_DEFENDER_BROKEN && itemId != AVERNIC_DEFENDER_BROKEN)
 			.map(ItemRequirements::item)
 			.toArray(SingleItemRequirement[]::new));
+	static final AnyRequirementCollection ANY_GOD_BOOK = any("Any God Book",
+		Stream.of(
+				ItemVariationMapping.getVariations(BOOK_OF_BALANCE).stream(),
+				ItemVariationMapping.getVariations(BOOK_OF_DARKNESS).stream(),
+				ItemVariationMapping.getVariations(BOOK_OF_LAW).stream(),
+				ItemVariationMapping.getVariations(BOOK_OF_WAR).stream(),
+				ItemVariationMapping.getVariations(HOLY_BOOK).stream(),
+				ItemVariationMapping.getVariations(UNHOLY_BOOK).stream())
+			.reduce(Stream::concat)
+			.orElseGet(Stream::empty)
+			.filter(itemId -> itemId != UNHOLY_BOOK_27191) // TODO: Figure out what this is
+			.map(ItemRequirements::item)
+			.toArray(SingleItemRequirement[]::new));
 
 	@Override
 	public void makeOverlayHint(PanelComponent panelComponent, ClueScrollPlugin plugin)
