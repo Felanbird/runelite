@@ -71,6 +71,13 @@ public class ItemVariations extends ClueScroll implements LocationClueScroll
 			.orElseGet(Stream::empty)
 			.map(ItemRequirements::item)
 			.toArray(SingleItemRequirement[]::new));
+	static final AnyRequirementCollection ANY_STOLE = any("Any stole",
+		Stream.of(
+			Stream.of(ANCIENT_STOLE, ARMADYL_STOLE, BANDOS_STOLE, GUTHIX_STOLE, SARADOMIN_STOLE, ZAMORAK_STOLE))
+			.reduce(Stream::concat)
+			.orElseGet(Stream::empty)
+			.map(ItemRequirements::item)
+			.toArray(SingleItemRequirement[]::new));
 	static final AnyRequirementCollection ANY_CHARGED_GLORY = any("Any Amulet of glory",
 		Stream.of( // TODO: Figure out of the clues that used charged glories actually work with trimmed ones,
 				// the wiki notes it as "An amulet of glory with any amount of charges or an amulet of eternal glory will work."
