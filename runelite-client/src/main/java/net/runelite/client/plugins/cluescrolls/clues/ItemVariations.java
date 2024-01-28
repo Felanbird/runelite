@@ -78,6 +78,13 @@ public class ItemVariations extends ClueScroll implements LocationClueScroll
 			.orElseGet(Stream::empty)
 			.map(ItemRequirements::item)
 			.toArray(SingleItemRequirement[]::new));
+	static final AnyRequirementCollection ANY_MITRE = any("Any mitre",
+		Stream.of(
+				Stream.of(ANCIENT_MITRE, ARMADYL_MITRE, BANDOS_MITRE, GUTHIX_MITRE, SARADOMIN_MITRE, ZAMORAK_MITRE))
+			.reduce(Stream::concat)
+			.orElseGet(Stream::empty)
+			.map(ItemRequirements::item)
+			.toArray(SingleItemRequirement[]::new));
 	static final AnyRequirementCollection ANY_RING_OF_DUELING = any("Any Ring of dueling",
 		Stream.of(
 				Stream.of(RING_OF_DUELING1, RING_OF_DUELING2, RING_OF_DUELING3, RING_OF_DUELING4, RING_OF_DUELING5,
