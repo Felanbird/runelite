@@ -53,6 +53,16 @@ public class ItemVariations extends ClueScroll implements LocationClueScroll
 		ItemVariationMapping.getVariations(PHARAOHS_SCEPTRE).stream()
 			.map(ItemRequirements::item)
 			.toArray(SingleItemRequirement[]::new));
+	static final AnyRequirementCollection ANY_ABYSSAL_WHIP_OR_TENTACLE = any("Abyssal whip",
+		Stream.of(
+		ItemVariationMapping.getVariations(ABYSSAL_WHIP).stream(),
+		ItemVariationMapping.getVariations(ABYSSAL_TENTACLE).stream())
+			.reduce(Stream::concat)
+			.orElseGet(Stream::empty)
+			// TODO: figure out what these are, 4178 is apparently never used
+			.filter(itemId -> itemId != ABYSSAL_WHIP_4178 && itemId != ABYSSAL_WHIP_20405)
+			.map(ItemRequirements::item)
+			.toArray(SingleItemRequirement[]::new));
 	static final AnyRequirementCollection ANY_TEAM_CAPE = any("Any team cape",
 		Stream.of(
 				ItemVariationMapping.getVariations(TEAM1_CAPE).stream(),
