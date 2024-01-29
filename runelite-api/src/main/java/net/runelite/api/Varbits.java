@@ -945,4 +945,9 @@ public final class Varbits
 	public static final int COMBAT_TASK_ELITE = 12888;
 	public static final int COMBAT_TASK_MASTER = 12889;
 	public static final int COMBAT_TASK_GRANDMASTER = 12890;
+
+	/**
+	 * How long is left on Scurrius' food pile's cooldown (in minutes).
+	 */
+	public static final int SCURRIUS_FOOD_PILE_COOLDOWN = 9581;
 }
