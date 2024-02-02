@@ -187,15 +187,7 @@ public class SkillChallengeClue extends ClueScroll implements NpcClueScroll, Nam
 		new SkillChallengeClue("Steal from a chest in Ardougne Castle."),
 		new SkillChallengeClue("Craft a green dragonhide body.", xOfItem(ItemID.GREEN_DRAGON_LEATHER, 3), item(ItemID.NEEDLE), item(ItemID.THREAD)),
 		new SkillChallengeClue("String a yew longbow.", item(ItemID.YEW_LONGBOW_U), item(ItemID.BOW_STRING)),
-		new SkillChallengeClue("Kill a Dust Devil.", "slay a dust devil.", true,
-			any("Facemask or Slayer Helmet",
-				Stream.of(
-					ItemVariationMapping.getVariations(ItemID.SLAYER_HELMET).stream(),
-					Stream.of(ItemID.FACEMASK))
-					.reduce(Stream::concat)
-					.orElseGet(Stream::empty)
-					.map(ItemRequirements::item)
-					.toArray(SingleItemRequirement[]::new))),
+		new SkillChallengeClue("Kill a Dust Devil.", "slay a dust devil.", true, any("Facemask or Slayer Helmet", item(ItemID.FACEMASK), RequirementCollections.ANY_SLAYER_HELMET)),
 		new SkillChallengeClue("Catch a black warlock.", item(ItemID.BUTTERFLY_JAR), any("Butterfly Net", item(ItemID.BUTTERFLY_NET), item(ItemID.MAGIC_BUTTERFLY_NET))),
 		new SkillChallengeClue("Catch a red chinchompa.", item(ItemID.BOX_TRAP)),
 		new SkillChallengeClue("Mine a mithril ore.", ANY_PICKAXE),
