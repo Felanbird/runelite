@@ -144,6 +144,20 @@ public class RequirementCollections extends ClueScroll implements LocationClueSc
 		item(CRYSTAL_FELLING_AXE_INACTIVE),
 		item(TRAILBLAZER_AXE)
 	);
+	static final AllRequirementsCollection A_FULL_GRACEFUL_SET = all("A full Graceful set",
+		any("" /* graceful hood   */, ItemVariationMapping.getVariations(GRACEFUL_HOOD).stream().map(ItemRequirements::item).toArray(SingleItemRequirement[]::new)),
+		any("" /* graceful top    */, ItemVariationMapping.getVariations(GRACEFUL_TOP).stream().map(ItemRequirements::item).toArray(SingleItemRequirement[]::new)),
+		any("" /* graceful legs   */, ItemVariationMapping.getVariations(GRACEFUL_LEGS).stream().map(ItemRequirements::item).toArray(SingleItemRequirement[]::new)),
+		any("" /* graceful gloves */, ItemVariationMapping.getVariations(GRACEFUL_GLOVES).stream().map(ItemRequirements::item).toArray(SingleItemRequirement[]::new)),
+		any("" /* graceful boots  */, ItemVariationMapping.getVariations(GRACEFUL_BOOTS).stream().map(ItemRequirements::item).toArray(SingleItemRequirement[]::new)),
+		any("" /* graceful cape   */, Stream.of(
+				ItemVariationMapping.getVariations(GRACEFUL_CAPE).stream(),
+				ItemVariationMapping.getVariations(AGILITY_CAPE).stream(),
+				ItemVariationMapping.getVariations(MAX_CAPE).stream())
+			.reduce(Stream::concat)
+			.orElseGet(Stream::empty)
+			.map(ItemRequirements::item).toArray(SingleItemRequirement[]::new))
+	);
 
 	@Override
 	public void makeOverlayHint(PanelComponent panelComponent, ClueScrollPlugin plugin)
