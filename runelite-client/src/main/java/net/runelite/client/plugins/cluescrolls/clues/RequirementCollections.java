@@ -45,6 +45,11 @@ import net.runelite.client.ui.overlay.components.PanelComponent;
 @Getter
 public class RequirementCollections extends ClueScroll implements LocationClueScroll
 {
+	static final AnyRequirementCollection ANY_SLAYER_HELMET = any("Any slayer helmet",
+		ItemVariationMapping.getVariations(SLAYER_HELMET).stream()
+			.map(ItemRequirements::item)
+			.toArray(SingleItemRequirement[]::new));
+
 	@Override
 	public void makeOverlayHint(PanelComponent panelComponent, ClueScrollPlugin plugin)
 	{
