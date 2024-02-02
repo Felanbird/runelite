@@ -113,6 +113,37 @@ public class RequirementCollections extends ClueScroll implements LocationClueSc
 		item(CRYSTAL_PICKAXE_INACTIVE),
 		item(TRAILBLAZER_PICKAXE)
 	);
+	static final AnyRequirementCollection ANY_AXE = any("Any Axe",
+		item(BRONZE_AXE),
+		item(BRONZE_FELLING_AXE),
+		item(IRON_AXE),
+		item(IRON_FELLING_AXE),
+		item(STEEL_AXE),
+		item(STEEL_FELLING_AXE),
+		item(BLACK_AXE),
+		item(BLACK_FELLING_AXE),
+		item(MITHRIL_AXE),
+		item(MITHRIL_FELLING_AXE),
+		item(ADAMANT_AXE),
+		item(ADAMANT_FELLING_AXE),
+		item(RUNE_AXE),
+		item(RUNE_FELLING_AXE),
+		item(DRAGON_AXE),
+		item(DRAGON_AXE_OR),
+		item(DRAGON_FELLING_AXE),
+		item(INFERNAL_AXE),
+		item(INFERNAL_AXE_OR),
+		item(INFERNAL_AXE_UNCHARGED),
+		item(INFERNAL_AXE_UNCHARGED_25371),
+		item(GILDED_AXE),
+		item(_3RD_AGE_AXE),
+		item(_3RD_AGE_FELLING_AXE),
+		item(CRYSTAL_AXE),
+		item(CRYSTAL_AXE_INACTIVE),
+		item(CRYSTAL_FELLING_AXE),
+		item(CRYSTAL_FELLING_AXE_INACTIVE),
+		item(TRAILBLAZER_AXE)
+	);
 
 	@Override
 	public void makeOverlayHint(PanelComponent panelComponent, ClueScrollPlugin plugin)
