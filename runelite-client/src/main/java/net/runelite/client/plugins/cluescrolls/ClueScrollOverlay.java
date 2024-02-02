@@ -136,7 +136,8 @@ public class ClueScrollOverlay extends OverlayPanel
 			panelComponent.getChildren().add(LineComponent.builder().left("").build());
 			panelComponent.getChildren().add(LineComponent.builder().left("Requires Light Source!").leftColor(Color.RED).build());
 		}
-
+		// TODO: Figure out how to turn this into code that knows the name of the spellbook so it doesn't have
+		// to be duplicated for the Barrows Teleport Tablet SkillChallenge clue
 		if (clue.isRequiresStandardSpellbook()
 			&& (client.getVarbitValue(Varbits.CURRENT_SPELLBOOK) != 0))
 		{
