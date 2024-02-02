@@ -73,29 +73,6 @@ public class SkillChallengeClue extends ClueScroll implements NpcClueScroll, Nam
 		private final String location;
 	}
 
-	private static final AnyRequirementCollection ANY_PICKAXE = any("Any Pickaxe",
-		item(ItemID.BRONZE_PICKAXE),
-		item(ItemID.IRON_PICKAXE),
-		item(ItemID.STEEL_PICKAXE),
-		item(ItemID.BLACK_PICKAXE),
-		item(ItemID.MITHRIL_PICKAXE),
-		item(ItemID.ADAMANT_PICKAXE),
-		item(ItemID.RUNE_PICKAXE),
-		item(ItemID.DRAGON_PICKAXE),
-		item(ItemID.DRAGON_PICKAXE_12797),
-		item(ItemID.DRAGON_PICKAXE_OR),
-		item(ItemID.DRAGON_PICKAXE_OR_25376),
-		item(ItemID.INFERNAL_PICKAXE),
-		item(ItemID.INFERNAL_PICKAXE_OR),
-		item(ItemID.INFERNAL_PICKAXE_UNCHARGED),
-		item(ItemID.INFERNAL_PICKAXE_UNCHARGED_25369),
-		item(ItemID.GILDED_PICKAXE),
-		item(ItemID._3RD_AGE_PICKAXE),
-		item(ItemID.CRYSTAL_PICKAXE),
-		item(ItemID.CRYSTAL_PICKAXE_INACTIVE),
-		item(ItemID.TRAILBLAZER_PICKAXE)
-	);
-
 	private static final AnyRequirementCollection ANY_AXE = any("Any Axe",
 		item(ItemID.BRONZE_AXE),
 		item(ItemID.BRONZE_FELLING_AXE),
@@ -171,7 +148,7 @@ public class SkillChallengeClue extends ClueScroll implements NpcClueScroll, Nam
 		new SkillChallengeClue("Kill a Dust Devil.", "slay a dust devil.", true, any("Facemask or Slayer Helmet", item(ItemID.FACEMASK), RequirementCollections.ANY_SLAYER_HELMET)),
 		new SkillChallengeClue("Catch a black warlock.", item(ItemID.BUTTERFLY_JAR), any("Butterfly Net", item(ItemID.BUTTERFLY_NET), item(ItemID.MAGIC_BUTTERFLY_NET))),
 		new SkillChallengeClue("Catch a red chinchompa.", item(ItemID.BOX_TRAP)),
-		new SkillChallengeClue("Mine a mithril ore.", ANY_PICKAXE),
+		new SkillChallengeClue("Mine a mithril ore.", RequirementCollections.ANY_PICKAXE),
 		new SkillChallengeClue("Smith a mithril 2h sword.", RequirementCollections.ANY_HAMMER, xOfItem(ItemID.MITHRIL_BAR, 3)),
 		new SkillChallengeClue("Catch a raw shark.", RequirementCollections.ANY_HARPOON),
 		new SkillChallengeClue("Cut a yew log.", ANY_AXE),
@@ -194,7 +171,7 @@ public class SkillChallengeClue extends ClueScroll implements NpcClueScroll, Nam
 		new SkillChallengeClue("Burn a redwood log.", item(ItemID.REDWOOD_LOGS), item(ItemID.TINDERBOX)),
 		new SkillChallengeClue("Complete a lap of Rellekka's Rooftop Agility Course", "complete a lap of the rellekka rooftop agility course whilst sporting the finest amount of grace.", true, A_FULL_GRACEFUL_SET),
 		new SkillChallengeClue("Mix an anti-venom potion.", item(ItemID.ANTIDOTE4_5952), xOfItem(ItemID.ZULRAHS_SCALES, 20)),
-		new SkillChallengeClue("Mine a piece of Runite ore", "mine a piece of runite ore whilst sporting the finest mining gear.", true, ANY_PICKAXE,
+		new SkillChallengeClue("Mine a piece of Runite ore", "mine a piece of runite ore whilst sporting the finest mining gear.", true, RequirementCollections.ANY_PICKAXE,
 			all("Prospector kit",
 				any("", item(ItemID.PROSPECTOR_HELMET), item(ItemID.GOLDEN_PROSPECTOR_HELMET)),
 				any("", item(ItemID.PROSPECTOR_JACKET), item(ItemID.VARROCK_ARMOUR_4), item(ItemID.GOLDEN_PROSPECTOR_JACKET)),
