@@ -78,7 +78,19 @@ public class RequirementCollections extends ClueScroll implements LocationClueSc
 		item(HAMMER),
 		item(IMCANDO_HAMMER)
 	);
-
+	static final AnyRequirementCollection ANY_HARPOON = any("Harpoon",
+		item(HARPOON),
+		item(BARBTAIL_HARPOON),
+		item(DRAGON_HARPOON),
+		item(DRAGON_HARPOON_OR),
+		item(INFERNAL_HARPOON),
+		item(INFERNAL_HARPOON_OR),
+		item(INFERNAL_HARPOON_UNCHARGED),
+		item(INFERNAL_HARPOON_UNCHARGED_25367),
+		item(CRYSTAL_HARPOON),
+		item(CRYSTAL_HARPOON_INACTIVE),
+		item(TRAILBLAZER_HARPOON)
+	);
 
 	@Override
 	public void makeOverlayHint(PanelComponent panelComponent, ClueScrollPlugin plugin)
