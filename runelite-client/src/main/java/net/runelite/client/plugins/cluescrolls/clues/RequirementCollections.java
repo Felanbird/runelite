@@ -28,7 +28,6 @@ package net.runelite.client.plugins.cluescrolls.clues;
 import java.awt.Graphics2D;
 import java.util.stream.Stream;
 import lombok.Getter;
-import net.runelite.api.ItemID;
 import static net.runelite.api.ItemID.*;
 import net.runelite.api.coords.WorldPoint;
 import net.runelite.client.game.ItemVariationMapping;
