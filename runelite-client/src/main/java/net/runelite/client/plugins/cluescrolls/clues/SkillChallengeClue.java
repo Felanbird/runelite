@@ -128,20 +128,6 @@ public class SkillChallengeClue extends ClueScroll implements NpcClueScroll, Nam
 		item(ItemID.TRAILBLAZER_AXE)
 	);
 
-	private static final AnyRequirementCollection ANY_HARPOON = any("Harpoon",
-		item(ItemID.HARPOON),
-		item(ItemID.BARBTAIL_HARPOON),
-		item(ItemID.DRAGON_HARPOON),
-		item(ItemID.DRAGON_HARPOON_OR),
-		item(ItemID.INFERNAL_HARPOON),
-		item(ItemID.INFERNAL_HARPOON_OR),
-		item(ItemID.INFERNAL_HARPOON_UNCHARGED),
-		item(ItemID.INFERNAL_HARPOON_UNCHARGED_25367),
-		item(ItemID.CRYSTAL_HARPOON),
-		item(ItemID.CRYSTAL_HARPOON_INACTIVE),
-		item(ItemID.TRAILBLAZER_HARPOON)
-	);
-
 	private static final AllRequirementsCollection A_FULL_GRACEFUL_SET = all("A full Graceful set",
 		any("" /* graceful hood   */, ItemVariationMapping.getVariations(ItemID.GRACEFUL_HOOD).stream().map(ItemRequirements::item).toArray(SingleItemRequirement[]::new)),
 		any("" /* graceful top    */, ItemVariationMapping.getVariations(ItemID.GRACEFUL_TOP).stream().map(ItemRequirements::item).toArray(SingleItemRequirement[]::new)),
@@ -187,7 +173,7 @@ public class SkillChallengeClue extends ClueScroll implements NpcClueScroll, Nam
 		new SkillChallengeClue("Catch a red chinchompa.", item(ItemID.BOX_TRAP)),
 		new SkillChallengeClue("Mine a mithril ore.", ANY_PICKAXE),
 		new SkillChallengeClue("Smith a mithril 2h sword.", RequirementCollections.ANY_HAMMER, xOfItem(ItemID.MITHRIL_BAR, 3)),
-		new SkillChallengeClue("Catch a raw shark.", ANY_HARPOON),
+		new SkillChallengeClue("Catch a raw shark.", RequirementCollections.ANY_HARPOON),
 		new SkillChallengeClue("Cut a yew log.", ANY_AXE),
 		new SkillChallengeClue("Fix a magical lamp in Dorgesh-Kaan.", new String[] { "Broken lamp" }, new int[] { 10834, 10835 }, item(ItemID.LIGHT_ORB)),
 		new SkillChallengeClue("Burn a yew log.", item(ItemID.YEW_LOGS), item(ItemID.TINDERBOX)),
