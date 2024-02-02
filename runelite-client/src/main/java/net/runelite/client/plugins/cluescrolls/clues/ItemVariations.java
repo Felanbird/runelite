@@ -28,13 +28,17 @@ package net.runelite.client.plugins.cluescrolls.clues;
 import java.awt.Graphics2D;
 import java.util.stream.Stream;
 import lombok.Getter;
+import net.runelite.api.ItemID;
 import static net.runelite.api.ItemID.*;
 import net.runelite.api.coords.WorldPoint;
 import net.runelite.client.game.ItemVariationMapping;
 import net.runelite.client.plugins.cluescrolls.ClueScrollPlugin;
+import net.runelite.client.plugins.cluescrolls.clues.item.AllRequirementsCollection;
 import net.runelite.client.plugins.cluescrolls.clues.item.AnyRequirementCollection;
 import net.runelite.client.plugins.cluescrolls.clues.item.ItemRequirements;
+import static net.runelite.client.plugins.cluescrolls.clues.item.ItemRequirements.all;
 import static net.runelite.client.plugins.cluescrolls.clues.item.ItemRequirements.any;
+import static net.runelite.client.plugins.cluescrolls.clues.item.ItemRequirements.item;
 import net.runelite.client.plugins.cluescrolls.clues.item.SingleItemRequirement;
 import net.runelite.client.ui.overlay.components.PanelComponent;
 
@@ -137,6 +141,86 @@ public class ItemVariations extends ClueScroll implements LocationClueScroll
 			.filter(itemId -> itemId != UNHOLY_BOOK_27191) // TODO: Figure out what this is
 			.map(ItemRequirements::item)
 			.toArray(SingleItemRequirement[]::new));
+	static final AnyRequirementCollection ANY_PICKAXE = any("Any Pickaxe",
+		item(ItemID.BRONZE_PICKAXE),
+		item(ItemID.IRON_PICKAXE),
+		item(ItemID.STEEL_PICKAXE),
+		item(ItemID.BLACK_PICKAXE),
+		item(ItemID.MITHRIL_PICKAXE),
+		item(ItemID.ADAMANT_PICKAXE),
+		item(ItemID.RUNE_PICKAXE),
+		item(ItemID.DRAGON_PICKAXE),
+		item(ItemID.DRAGON_PICKAXE_12797),
+		item(ItemID.DRAGON_PICKAXE_OR),
+		item(ItemID.DRAGON_PICKAXE_OR_25376),
+		item(ItemID.INFERNAL_PICKAXE),
+		item(ItemID.INFERNAL_PICKAXE_OR),
+		item(ItemID.INFERNAL_PICKAXE_UNCHARGED),
+		item(ItemID.INFERNAL_PICKAXE_UNCHARGED_25369),
+		item(ItemID.GILDED_PICKAXE),
+		item(ItemID._3RD_AGE_PICKAXE),
+		item(ItemID.CRYSTAL_PICKAXE),
+		item(ItemID.CRYSTAL_PICKAXE_INACTIVE),
+		item(ItemID.TRAILBLAZER_PICKAXE));
+	static final AnyRequirementCollection ANY_AXE = any("Any Axe",
+		item(ItemID.BRONZE_AXE),
+		item(ItemID.BRONZE_FELLING_AXE),
+		item(ItemID.IRON_AXE),
+		item(ItemID.IRON_FELLING_AXE),
+		item(ItemID.STEEL_AXE),
+		item(ItemID.STEEL_FELLING_AXE),
+		item(ItemID.BLACK_AXE),
+		item(ItemID.BLACK_FELLING_AXE),
+		item(ItemID.MITHRIL_AXE),
+		item(ItemID.MITHRIL_FELLING_AXE),
+		item(ItemID.ADAMANT_AXE),
+		item(ItemID.ADAMANT_FELLING_AXE),
+		item(ItemID.RUNE_AXE),
+		item(ItemID.RUNE_FELLING_AXE),
+		item(ItemID.DRAGON_AXE),
+		item(ItemID.DRAGON_AXE_OR),
+		item(ItemID.DRAGON_FELLING_AXE),
+		item(ItemID.INFERNAL_AXE),
+		item(ItemID.INFERNAL_AXE_OR),
+		item(ItemID.INFERNAL_AXE_UNCHARGED),
+		item(ItemID.INFERNAL_AXE_UNCHARGED_25371),
+		item(ItemID.GILDED_AXE),
+		item(ItemID._3RD_AGE_AXE),
+		item(ItemID._3RD_AGE_FELLING_AXE),
+		item(ItemID.CRYSTAL_AXE),
+		item(ItemID.CRYSTAL_AXE_INACTIVE),
+		item(ItemID.CRYSTAL_FELLING_AXE),
+		item(ItemID.CRYSTAL_FELLING_AXE_INACTIVE),
+		item(ItemID.TRAILBLAZER_AXE));
+
+	static final AnyRequirementCollection ANY_HARPOON = any("Harpoon",
+		item(ItemID.HARPOON),
+		item(ItemID.BARBTAIL_HARPOON),
+		item(ItemID.DRAGON_HARPOON),
+		item(ItemID.DRAGON_HARPOON_OR),
+		item(ItemID.INFERNAL_HARPOON),
+		item(ItemID.INFERNAL_HARPOON_OR),
+		item(ItemID.INFERNAL_HARPOON_UNCHARGED),
+		item(ItemID.INFERNAL_HARPOON_UNCHARGED_25367),
+		item(ItemID.CRYSTAL_HARPOON),
+		item(ItemID.CRYSTAL_HARPOON_INACTIVE),
+		item(ItemID.TRAILBLAZER_HARPOON));
+	static final AnyRequirementCollection ANY_HAMMER = any("Hammer",
+		item(ItemID.HAMMER),
+		item(ItemID.IMCANDO_HAMMER));
+	static final AllRequirementsCollection A_FULL_GRACEFUL_SET = all("A full Graceful set",
+		any("" /* graceful hood   */, ItemVariationMapping.getVariations(ItemID.GRACEFUL_HOOD).stream().map(ItemRequirements::item).toArray(SingleItemRequirement[]::new)),
+		any("" /* graceful top    */, ItemVariationMapping.getVariations(ItemID.GRACEFUL_TOP).stream().map(ItemRequirements::item).toArray(SingleItemRequirement[]::new)),
+		any("" /* graceful legs   */, ItemVariationMapping.getVariations(ItemID.GRACEFUL_LEGS).stream().map(ItemRequirements::item).toArray(SingleItemRequirement[]::new)),
+		any("" /* graceful gloves */, ItemVariationMapping.getVariations(ItemID.GRACEFUL_GLOVES).stream().map(ItemRequirements::item).toArray(SingleItemRequirement[]::new)),
+		any("" /* graceful boots  */, ItemVariationMapping.getVariations(ItemID.GRACEFUL_BOOTS).stream().map(ItemRequirements::item).toArray(SingleItemRequirement[]::new)),
+		any("" /* graceful cape   */, Stream.of(
+				ItemVariationMapping.getVariations(ItemID.GRACEFUL_CAPE).stream(),
+				ItemVariationMapping.getVariations(ItemID.AGILITY_CAPE).stream(),
+				ItemVariationMapping.getVariations(ItemID.MAX_CAPE).stream())
+			.reduce(Stream::concat)
+			.orElseGet(Stream::empty)
+			.map(ItemRequirements::item).toArray(SingleItemRequirement[]::new)));
 
 	@Override
 	public void makeOverlayHint(PanelComponent panelComponent, ClueScrollPlugin plugin)
