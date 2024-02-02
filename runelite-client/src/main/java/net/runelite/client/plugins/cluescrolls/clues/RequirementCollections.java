@@ -53,6 +53,10 @@ public class RequirementCollections extends ClueScroll implements LocationClueSc
 		ItemVariationMapping.getVariations(RING_OF_WEALTH).stream()
 			.map(ItemRequirements::item)
 			.toArray(SingleItemRequirement[]::new));
+	static final AnyRequirementCollection ANY_PHARAOHS_SCEPTRE = any("Pharaoh's sceptre",
+		ItemVariationMapping.getVariations(PHARAOHS_SCEPTRE).stream()
+			.map(ItemRequirements::item)
+			.toArray(SingleItemRequirement[]::new));
 
 	@Override
 	public void makeOverlayHint(PanelComponent panelComponent, ClueScrollPlugin plugin)
