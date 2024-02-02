@@ -49,6 +49,10 @@ public class RequirementCollections extends ClueScroll implements LocationClueSc
 		ItemVariationMapping.getVariations(SLAYER_HELMET).stream()
 			.map(ItemRequirements::item)
 			.toArray(SingleItemRequirement[]::new));
+	static final AnyRequirementCollection ANY_RING_OF_WEALTH = any("Any ring of wealth",
+		ItemVariationMapping.getVariations(RING_OF_WEALTH).stream()
+			.map(ItemRequirements::item)
+			.toArray(SingleItemRequirement[]::new));
 
 	@Override
 	public void makeOverlayHint(PanelComponent panelComponent, ClueScrollPlugin plugin)
