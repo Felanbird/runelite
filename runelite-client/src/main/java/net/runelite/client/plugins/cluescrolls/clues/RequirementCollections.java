@@ -65,6 +65,15 @@ public class RequirementCollections extends ClueScroll implements LocationClueSc
 			.orElseGet(Stream::empty)
 			.map(ItemRequirements::item)
 			.toArray(SingleItemRequirement[]::new));
+	static final AnyRequirementCollection ACTIVE_CRYSTAL_BOW_OR_BOW_OF_FAERDHINEN = any("Crystal Bow or Bow of Faerdhinen",
+		Stream.of(
+				ItemVariationMapping.getVariations(BOW_OF_FAERDHINEN_INACTIVE).stream(),
+				Stream.of(CRYSTAL_BOW, CRYSTAL_BOW_24123))
+			.reduce(Stream::concat)
+			.orElseGet(Stream::empty)
+			.filter(itemId -> itemId != BOW_OF_FAERDHINEN_INACTIVE)
+			.map(ItemRequirements::item)
+			.toArray(SingleItemRequirement[]::new));
 
 	@Override
 	public void makeOverlayHint(PanelComponent panelComponent, ClueScrollPlugin plugin)
