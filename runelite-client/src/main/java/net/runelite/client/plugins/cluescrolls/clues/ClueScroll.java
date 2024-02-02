@@ -46,6 +46,10 @@ public abstract class ClueScroll
 	private boolean requiresLight;
 
 	@Setter(AccessLevel.PROTECTED)
+	@Getter(AccessLevel.PUBLIC)
+	private boolean requiresStandardSpellbook;
+
+	@Setter(AccessLevel.PROTECTED)
 	@Getter(onMethod_ = {@Varbit}, value = AccessLevel.PUBLIC)
 	private int firePitVarbitId = -1;
 

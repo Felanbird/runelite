@@ -1109,6 +1109,7 @@ public class CrypticClue extends ClueScroll implements NpcClueScroll, ObjectClue
 			.text("If you're feeling brave, dig beneath the dragon's eye.")
 			.location(new WorldPoint(2410, 4714, 0))
 			.solution("Dig below the mossy rock under the Viyeldi caves (Legend's Quest). Items needed: Pickaxe, unpowered orb, lockpick, spade, any charge orb spell, and either 79 agility or an axe and machete.")
+			.requiresStandardSpellbook(true)
 			.build(),
 		CrypticClue.builder()
 			.text("Search the tents in the Imperial Guard camp in Burthorpe for some boxes.")
@@ -1719,6 +1720,7 @@ public class CrypticClue extends ClueScroll implements NpcClueScroll, ObjectClue
 		String solution,
 		@Nullable String questionText,
 		boolean requiresLight,
+		boolean requiresStandardSpellbook,
 		@Singular List<Integer> npcRegions
 	)
 	{
@@ -1731,6 +1733,7 @@ public class CrypticClue extends ClueScroll implements NpcClueScroll, ObjectClue
 		this.npcRegions = npcRegions;
 		setRequiresSpade(this.locationProvider != null && npc == null && this.objectId == -1);
 		setRequiresLight(requiresLight);
+		setRequiresStandardSpellbook(requiresStandardSpellbook);
 	}
 
 	@Nullable

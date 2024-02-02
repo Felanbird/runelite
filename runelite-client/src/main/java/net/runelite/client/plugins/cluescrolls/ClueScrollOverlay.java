@@ -36,6 +36,7 @@ import net.runelite.api.Item;
 import static net.runelite.api.ItemID.*;
 import static net.runelite.api.MenuAction.RUNELITE_OVERLAY;
 import static net.runelite.api.MenuAction.RUNELITE_OVERLAY_CONFIG;
+import net.runelite.api.Varbits;
 import net.runelite.client.plugins.cluescrolls.clues.ClueScroll;
 import net.runelite.client.plugins.cluescrolls.clues.item.AnyRequirementCollection;
 import net.runelite.client.plugins.cluescrolls.clues.item.ItemRequirement;
@@ -134,6 +135,13 @@ public class ClueScrollOverlay extends OverlayPanel
 		{
 			panelComponent.getChildren().add(LineComponent.builder().left("").build());
 			panelComponent.getChildren().add(LineComponent.builder().left("Requires Light Source!").leftColor(Color.RED).build());
+		}
+
+		if (clue.isRequiresStandardSpellbook()
+			&& (client.getVarbitValue(Varbits.CURRENT_SPELLBOOK) != 0))
+		{
+			panelComponent.getChildren().add(LineComponent.builder().left("").build());
+			panelComponent.getChildren().add(LineComponent.builder().left("Must be on the Standard Spellbook!").leftColor(Color.RED).build());
 		}
 
 		if (clue.getEnemy() != null)

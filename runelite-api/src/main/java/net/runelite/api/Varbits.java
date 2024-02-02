@@ -878,4 +878,14 @@ public final class Varbits
 	 * This varbit determines which location he will appear in, which is useful for a master clue step.
 	 */
 	public static final int VIGGORA_LOCATION = 815;
+
+	/**
+	 * The Magic Spellbook the player currently has selected.
+	 * <p>
+	 * 0 - Standard
+	 * 1 - Ancient
+	 * 2 - Lunar
+	 * 3 - Arceuus
+	 */
+	public static final int CURRENT_SPELLBOOK = 4070;
 }
