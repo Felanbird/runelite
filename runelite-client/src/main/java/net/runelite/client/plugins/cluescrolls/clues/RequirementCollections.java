@@ -57,6 +57,14 @@ public class RequirementCollections extends ClueScroll implements LocationClueSc
 		ItemVariationMapping.getVariations(PHARAOHS_SCEPTRE).stream()
 			.map(ItemRequirements::item)
 			.toArray(SingleItemRequirement[]::new));
+	static final AnyRequirementCollection ANY_TEAM_CAPE = any("Any team cape",
+		Stream.of(
+				ItemVariationMapping.getVariations(TEAM1_CAPE).stream(),
+				Stream.of(TEAM_CAPE_I, TEAM_CAPE_X, TEAM_CAPE_ZERO))
+			.reduce(Stream::concat)
+			.orElseGet(Stream::empty)
+			.map(ItemRequirements::item)
+			.toArray(SingleItemRequirement[]::new));
 
 	@Override
 	public void makeOverlayHint(PanelComponent panelComponent, ClueScrollPlugin plugin)
