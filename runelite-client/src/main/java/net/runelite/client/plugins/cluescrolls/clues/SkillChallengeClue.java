@@ -142,11 +142,6 @@ public class SkillChallengeClue extends ClueScroll implements NpcClueScroll, Nam
 		item(ItemID.TRAILBLAZER_HARPOON)
 	);
 
-	private static final AnyRequirementCollection ANY_HAMMER = any("Hammer",
-		item(ItemID.HAMMER),
-		item(ItemID.IMCANDO_HAMMER)
-	);
-
 	private static final AllRequirementsCollection A_FULL_GRACEFUL_SET = all("A full Graceful set",
 		any("" /* graceful hood   */, ItemVariationMapping.getVariations(ItemID.GRACEFUL_HOOD).stream().map(ItemRequirements::item).toArray(SingleItemRequirement[]::new)),
 		any("" /* graceful top    */, ItemVariationMapping.getVariations(ItemID.GRACEFUL_TOP).stream().map(ItemRequirements::item).toArray(SingleItemRequirement[]::new)),
@@ -191,7 +186,7 @@ public class SkillChallengeClue extends ClueScroll implements NpcClueScroll, Nam
 		new SkillChallengeClue("Catch a black warlock.", item(ItemID.BUTTERFLY_JAR), any("Butterfly Net", item(ItemID.BUTTERFLY_NET), item(ItemID.MAGIC_BUTTERFLY_NET))),
 		new SkillChallengeClue("Catch a red chinchompa.", item(ItemID.BOX_TRAP)),
 		new SkillChallengeClue("Mine a mithril ore.", ANY_PICKAXE),
-		new SkillChallengeClue("Smith a mithril 2h sword.", ANY_HAMMER, xOfItem(ItemID.MITHRIL_BAR, 3)),
+		new SkillChallengeClue("Smith a mithril 2h sword.", RequirementCollections.ANY_HAMMER, xOfItem(ItemID.MITHRIL_BAR, 3)),
 		new SkillChallengeClue("Catch a raw shark.", ANY_HARPOON),
 		new SkillChallengeClue("Cut a yew log.", ANY_AXE),
 		new SkillChallengeClue("Fix a magical lamp in Dorgesh-Kaan.", new String[] { "Broken lamp" }, new int[] { 10834, 10835 }, item(ItemID.LIGHT_ORB)),
@@ -203,7 +198,7 @@ public class SkillChallengeClue extends ClueScroll implements NpcClueScroll, Nam
 		new SkillChallengeClue("Hand in a Tier 2 or higher set of Shayzien supply armour. (Requires 11 lovakite bars)", "take the lovakengj armourers a boxed set of shayzien supply armour at tier 2 or above.", any("Shayzien Supply Set (Tier 2 or higher)", item(ItemID.SHAYZIEN_SUPPLY_SET_2), item(ItemID.SHAYZIEN_SUPPLY_SET_3), item(ItemID.SHAYZIEN_SUPPLY_SET_4), item(ItemID.SHAYZIEN_SUPPLY_SET_5))),
 		// Master Sherlock Tasks
 		new SkillChallengeClue("Equip an abyssal whip in front of the abyssal demons of the Slayer Tower.", true, any("Abyssal Whip", item(ItemID.ABYSSAL_WHIP), item(ItemID.FROZEN_ABYSSAL_WHIP), item(ItemID.VOLCANIC_ABYSSAL_WHIP), item(ItemID.ABYSSAL_WHIP_OR), item(ItemID.ABYSSAL_TENTACLE), item(ItemID.ABYSSAL_TENTACLE_OR))),
-		new SkillChallengeClue("Smith a runite med helm.", ANY_HAMMER, item(ItemID.RUNITE_BAR)),
+		new SkillChallengeClue("Smith a runite med helm.", RequirementCollections.ANY_HAMMER, item(ItemID.RUNITE_BAR)),
 		new SkillChallengeClue("Teleport to a spirit tree you planted yourself."),
 		new SkillChallengeClue("Create a Barrows teleport tablet.", item(ItemID.DARK_ESSENCE_BLOCK), xOfItem(ItemID.BLOOD_RUNE, 1), xOfItem(ItemID.LAW_RUNE, 2), xOfItem(ItemID.SOUL_RUNE, 2)),
 		new SkillChallengeClue("Kill a Nechryael in the Slayer Tower.", "slay a nechryael in the slayer tower."),

@@ -74,6 +74,11 @@ public class RequirementCollections extends ClueScroll implements LocationClueSc
 			.filter(itemId -> itemId != BOW_OF_FAERDHINEN_INACTIVE)
 			.map(ItemRequirements::item)
 			.toArray(SingleItemRequirement[]::new));
+	static final AnyRequirementCollection ANY_HAMMER = any("Hammer",
+		item(HAMMER),
+		item(IMCANDO_HAMMER)
+	);
+
 
 	@Override
 	public void makeOverlayHint(PanelComponent panelComponent, ClueScrollPlugin plugin)
