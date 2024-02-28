@@ -131,5 +131,22 @@ public class ArdougneDiaryRequirement extends GenericDiaryRequirement
 		add("Cast Ice Barrage on another player within Castle Wars.",
 			new SkillRequirement(Skill.MAGIC, 94),
 			new QuestRequirement(Quest.DESERT_TREASURE_I));
+
+		// placeholders
+		add("Sell Silk to Silk trader in Ardougne for 60 coins each.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Use the altar in East Ardougne's church.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Go out fishing on the Fishing Trawler.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Have Tindel Marchant identify a Rusted Sword for you.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Use the Ardougne Lever to teleport to the Wilderness.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("View Aleck's Hunter Emporium in Yanille.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Check what pets you have Insured with Probita in Ardougne.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+
 	}
 }

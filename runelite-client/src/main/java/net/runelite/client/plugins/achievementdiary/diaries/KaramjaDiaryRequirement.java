@@ -129,5 +129,30 @@ public class KaramjaDiaryRequirement extends GenericDiaryRequirement
 			new SkillRequirement(Skill.HERBLORE, 87));
 		add("Check the health of your Calquat tree patch.",
 			new SkillRequirement(Skill.FARMING, 72));
+
+		// placeholders
+		add("Pick 5 bananas from the plantation located east of the volcano.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Travel to Ardougne via the port near Brimhaven.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Use the Fishing spots north of the banana plantation.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Collect 5 seaweed from anywhere in Karamja.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Attempt the TzHaar Fight Pits or Fight Cave.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Kill a jogre in the Pothole dungeon.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Become the Champion of the Fight Pits.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Successfully kill a Ket-Zek in the Fight Caves.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Eat an oomlie wrap.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Kill a metal dragon in Brimhaven Dungeon.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Equip a Fire Cape or Infernal Cape in Mor Ul Rek.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+
 	}
 }

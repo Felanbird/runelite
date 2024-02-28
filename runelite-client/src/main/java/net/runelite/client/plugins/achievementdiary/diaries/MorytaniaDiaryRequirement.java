@@ -134,5 +134,20 @@ public class MorytaniaDiaryRequirement extends GenericDiaryRequirement
 				new SkillRequirement(Skill.MAGIC, 70)
 			)
 		);
+
+		// placeholders
+		add("Have Sbott in Canifis tan something for you.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Enter Mort Myre Swamp.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Kill a Ghoul.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Offer some bonemeal at the Ectofuntus.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Board the Swampy boat at the Hollows.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Travel to Dragontooth Isle.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+
 	}
 }

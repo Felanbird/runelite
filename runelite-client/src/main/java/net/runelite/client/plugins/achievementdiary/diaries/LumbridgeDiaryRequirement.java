@@ -128,5 +128,18 @@ public class LumbridgeDiaryRequirement extends GenericDiaryRequirement
 			new SkillRequirement(Skill.SMITHING, 88));
 		add("Craft 140 or more Water runes simultaneously from Essence without the use of Extracts.",
 			new SkillRequirement(Skill.RUNECRAFT, 76));
+
+		// placeholders
+		add("Learn your age from Hans in Lumbridge.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Pickpocket a man or woman in Lumbridge.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Kill a Zombie in Draynor Sewers.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Enter the H.A.M. Hideout.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Perform the Quest cape emote in the Wise Old Man's house.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+
 	}
 }

@@ -107,5 +107,40 @@ public class WildernessDiaryRequirement extends GenericDiaryRequirement
 		add("Cut and burn some magic logs in the Resource Area.",
 			new SkillRequirement(Skill.WOODCUTTING, 75),
 			new SkillRequirement(Skill.FIREMAKING, 75));
+
+		// placeholders
+		add("Enter the Wilderness from the Ardougne or Edgeville lever.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Prayer at the Chaos Altar in Western Wilderness.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Enter the Chaos Runecrafting temple.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Kill a mammoth in the Wilderness.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Restore some prayer potions at the demonic ruins.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Enter the King Black Dragon's lair.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Collect 5 Red spiders' eggs from the Wilderness.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Equip any team cape in the Wilderness.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Kill a Green Dragon.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Kill an Ankou in the Wilderness.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Talk to the Emblem Trader in Edgeville about emblems.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Open the Muddy Chest in the lava maze.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Kill a Lava Dragon.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Kill the Chaos Elemental.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Kill the Crazy Arc. Chaos Fanatic & Scorpia.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Kill Callisto, Venenatis & Vet'ion.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+
 	}
 }

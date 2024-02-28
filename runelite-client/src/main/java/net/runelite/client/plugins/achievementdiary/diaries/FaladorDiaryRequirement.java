@@ -115,5 +115,32 @@ public class FaladorDiaryRequirement extends GenericDiaryRequirement
 			new SkillRequirement(Skill.AGILITY, 80));
 		add("Mix a Saradomin brew in Falador east bank.",
 			new SkillRequirement(Skill.HERBLORE, 81));
+
+		// placeholders
+		add("Browse Sarah's farm shop.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Get a Haircut or a Shave from the Falador Hairdresser.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Fill a bucket from the pump north of Falador west bank.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Kill a duck in Falador park.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Make a mind tiara.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Take the boat to Entrana.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Repair a broken strut in the Motherlode Mine.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Claim a security book from the Security guard at Port Sarim jail.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Unlock the Crystal chest in Taverley",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Kill the Giant Mole beneath Falador park.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Enter the Warriors' Guild.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Perform a skillcape or quest cape emote at the top of Falador Castle.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+
 	}
 }

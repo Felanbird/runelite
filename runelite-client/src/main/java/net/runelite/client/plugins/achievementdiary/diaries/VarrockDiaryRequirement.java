@@ -114,5 +114,28 @@ public class VarrockDiaryRequirement extends GenericDiaryRequirement
 			new QuestRequirement(Quest.THE_TOURIST_TRAP));
 		add("Craft 100 or more earth runes simultaneously from Essence without the use of Extracts.",
 			new SkillRequirement(Skill.RUNECRAFT, 78));
+
+		// placeholders
+		add("Browse Thessalia's store.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Make a normal plank at the Sawmill",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Chop down a dying tree in the Lumber Yard.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Buy a newspaper.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Give a dog a bone!",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Have the Apothecary in Varrock make you a strength potion.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Perform the 4 emotes from the Stronghold of Security.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Make 20 Mahogany Planks in one go.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Speak to Orlando Smith when you have achieved 153 Kudos.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Teleport to Barbarian Village with a skull sceptre.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+
 	}
 }

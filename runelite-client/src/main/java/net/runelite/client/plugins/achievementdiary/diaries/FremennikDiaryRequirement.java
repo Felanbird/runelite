@@ -128,5 +128,17 @@ public class FremennikDiaryRequirement extends GenericDiaryRequirement
 		add("Slay a Spiritual mage within the Godwars Dungeon.",
 			new SkillRequirement(Skill.SLAYER, 83),
 			new QuestRequirement(Quest.TROLL_STRONGHOLD));
+
+		// placeholders
+		add("Fill a bucket with water at the Rellekka well.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+
+		add("Kill 5 Rock crabs.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Collect 5 Snape grass on Waterbirth Island.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Kill each of the Dagannoth Kings.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+
 	}
 }

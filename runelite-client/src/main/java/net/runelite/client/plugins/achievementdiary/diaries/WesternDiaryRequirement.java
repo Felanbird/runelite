@@ -140,5 +140,20 @@ public class WesternDiaryRequirement extends GenericDiaryRequirement
 		add("Pickpocket an Elf.",
 			new SkillRequirement(Skill.THIEVING, 85),
 			new QuestRequirement(Quest.MOURNINGS_END_PART_I, true));
+
+		// placeholders
+		add("Complete a lap of the Gnome agility course.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Score a goal in a Gnomeball match.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Teleport to Pest Control using the Minigame teleports.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Collect a swamp toad at the Gnome Stronghold.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Kill a Terrorbird in the Terrorbird enclosure",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Equip any complete void set.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+
 	}
 }

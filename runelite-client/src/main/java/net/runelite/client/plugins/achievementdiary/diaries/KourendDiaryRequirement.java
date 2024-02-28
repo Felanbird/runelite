@@ -114,5 +114,35 @@ public class KourendDiaryRequirement extends GenericDiaryRequirement
 		add("Create your own Battlestaff from scratch within the Farming Guild.",
 			new SkillRequirement(Skill.FARMING, 85),
 			new SkillRequirement(Skill.FLETCHING, 40));
+
+		// placeholders
+		add("Kill a sandcrab.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Hand in a book in the Arceuus Library.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Browse the Warrens General Store.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Take a boat to Land's End.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Pray at the Altar in Kourend Castle.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Dig up some Saltpetre.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+
+		add("Kill a Lizardman.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Switch to the Necromancy Spellbook at Tyss.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Deliver some intelligence to Captain Ginea.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Kill a Zombie in the Shayzien Crypts.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Teleport to Xeric's Heart using Xeric's Talisman.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Defeat Skotizo in the Catacombs of Kourend.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Complete a Raid in the Chambers of Xeric.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+
 	}
 }

@@ -114,5 +114,28 @@ public class DesertDiaryRequirement extends GenericDiaryRequirement
 		add("Restore at least 85 Prayer points when praying at the Altar in Sophanem.",
 			new SkillRequirement(Skill.PRAYER, 85),
 			new QuestRequirement(Quest.ICTHLARINS_LITTLE_HELPER, true));
+
+		// placeholders
+		add("Enter the Kalphite Hive.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Enter the Desert with a set of Desert robes equipped.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Kill a Vulture.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Have the Nardah Herbalist clean a Herb for you.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Collect 5 Potato Cactus from the Kalphite Hive.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Sell some artefacts to Simon Templeton.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Cut a desert cactus open to fill a waterskin.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Travel from the Shantay Pass to Pollnivneach by Magic Carpet.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Enter your player owned house from Pollnivneach.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Kill the Kalphite Queen.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+
 	}
 }

@@ -126,5 +126,29 @@ public class KandarinDiaryRequirement extends GenericDiaryRequirement
 		add("Teleport to Catherby.",
 			new SkillRequirement(Skill.MAGIC, 87),
 			new QuestRequirement(Quest.LUNAR_DIPLOMACY));
+
+		// placeholders
+		add("Buy a candle from the Chandler in Catherby.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Collect five Flax from the Seers' flax fields.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Play the Organ in Seers' Church.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Have Galahad make you a cup of tea.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Get a pet fish from Harry in Catherby",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Buy a Stew from the Seers' pub.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Speak to Sherlock.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+
+		add("Complete a wave of Barbarian Assault.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Kill a Mithril Dragon.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+		add("Read the Blackboard at Barbarian Assault after reaching level 5 in every role.",
+			new SkillRequirement(Skill.WOODCUTTING, 1));
+
 	}
 }
