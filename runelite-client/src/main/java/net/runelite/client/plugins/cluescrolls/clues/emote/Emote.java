@@ -57,8 +57,7 @@ public enum Emote
 	SLAP_HEAD("Slap Head", EMOTE_SLAP_HEAD),
 	STAMP("Stamp", EMOTE_STAMP),
 	FLAP("Flap", EMOTE_FLAP),
-	PUSH_UP("Push up", EMOTE_PUSH_UP),
-	FORTIS_SALUTE("Fortis Salute", EMOTE_FORTIS_SALUTE);
+	PUSH_UP("Push up", EMOTE_PUSH_UP);
 
 	private String name;
 	private int spriteId;
