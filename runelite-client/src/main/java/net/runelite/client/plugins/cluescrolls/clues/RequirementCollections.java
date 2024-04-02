@@ -179,7 +179,7 @@ public class RequirementCollections extends ClueScroll implements LocationClueSc
 			any("Guthan's warspear", item(GUTHANS_WARSPEAR), range(GUTHANS_WARSPEAR_100, GUTHANS_WARSPEAR_0)),
 			any("Guthan's platebody", item(GUTHANS_PLATEBODY), range(GUTHANS_PLATEBODY_100, GUTHANS_PLATEBODY_0)),
 			any("Guthan's chainskirt", item(GUTHANS_CHAINSKIRT), range(GUTHANS_CHAINSKIRT_100, GUTHANS_CHAINSKIRT_0))),
-		 all(any("Karil's coif", item(KARILS_COIF), range(KARILS_COIF_100, KARILS_COIF_0)),
+		all(any("Karil's coif", item(KARILS_COIF), range(KARILS_COIF_100, KARILS_COIF_0)),
 			any("Karil's crossbow", item(KARILS_CROSSBOW), range(KARILS_CROSSBOW_100, KARILS_CROSSBOW_0)),
 			any("Karil's leathertop", item(KARILS_LEATHERTOP), range(KARILS_LEATHERTOP_100, KARILS_LEATHERTOP_0)),
 			any("Karil's leatherskirt", item(KARILS_LEATHERSKIRT), range(KARILS_LEATHERSKIRT_100, KARILS_LEATHERSKIRT_0))),
