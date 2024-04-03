@@ -25,13 +25,9 @@
  */
 package net.runelite.client.plugins.cluescrolls.clues;
 
-import java.awt.Graphics2D;
 import java.util.stream.Stream;
-import lombok.Getter;
 import static net.runelite.api.ItemID.*;
-import net.runelite.api.coords.WorldPoint;
 import net.runelite.client.game.ItemVariationMapping;
-import net.runelite.client.plugins.cluescrolls.ClueScrollPlugin;
 import net.runelite.client.plugins.cluescrolls.clues.item.AllRequirementsCollection;
 import net.runelite.client.plugins.cluescrolls.clues.item.AnyRequirementCollection;
 import net.runelite.client.plugins.cluescrolls.clues.item.ItemRequirements;
@@ -40,10 +36,8 @@ import static net.runelite.client.plugins.cluescrolls.clues.item.ItemRequirement
 import static net.runelite.client.plugins.cluescrolls.clues.item.ItemRequirements.item;
 import static net.runelite.client.plugins.cluescrolls.clues.item.ItemRequirements.range;
 import net.runelite.client.plugins.cluescrolls.clues.item.SingleItemRequirement;
-import net.runelite.client.ui.overlay.components.PanelComponent;
 
-@Getter
-public class RequirementCollections extends ClueScroll implements LocationClueScroll
+class RequirementCollections
 {
 	static final AnyRequirementCollection ANY_SLAYER_HELMET = any("Any slayer helmet",
 		ItemVariationMapping.getVariations(SLAYER_HELMET).stream()
@@ -192,22 +186,4 @@ public class RequirementCollections extends ClueScroll implements LocationClueSc
 			any("Verac's brassard", item(VERACS_BRASSARD), range(VERACS_BRASSARD_100, VERACS_BRASSARD_0)),
 			any("Verac's plateskirt", item(VERACS_PLATESKIRT), range(VERACS_PLATESKIRT_100, VERACS_PLATESKIRT_0)))
 	);
-
-	@Override
-	public void makeOverlayHint(PanelComponent panelComponent, ClueScrollPlugin plugin)
-	{
-
-	}
-
-	@Override
-	public void makeWorldOverlayHint(Graphics2D graphics, ClueScrollPlugin plugin)
-	{
-
-	}
-
-	@Override
-	public WorldPoint getLocation(ClueScrollPlugin plugin)
-	{
-		return null;
-	}
 }
