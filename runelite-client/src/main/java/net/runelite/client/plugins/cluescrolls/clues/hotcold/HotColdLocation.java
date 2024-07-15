@@ -171,7 +171,7 @@ public enum HotColdLocation
 	WILDERNESS_38(MASTER, new WorldPoint(3293, 3813, 0), WILDERNESS, "Among the poison spiders south of Callisto's den, level 38 Wilderness.", ANCIENT_WIZARDS),
 	WILDERNESS_49(MASTER, new WorldPoint(3136, 3914, 0), WILDERNESS, "South-west of the Deserted Keep, level 49 Wilderness.", BRASSICAN_MAGE),
 	WILDERNESS_54(MASTER, new WorldPoint(2981, 3944, 0), WILDERNESS, "West of the Wilderness Agility Course, level 54 Wilderness.", BRASSICAN_MAGE),
-	ZEAH_BLASTMINE_BANK(MASTER, new WorldPoint(1504, 3859, 0), ZEAH, "Next to the bank in the Lovakengj blast mine.", BRASSICAN_MAGE),
+	ZEAH_BLASTMINE_BANK(MASTER, new WorldPoint(1504, 3859, 0), ZEAH, "Next to the bank in the Lovakengj blast mine.", BRASSICAN_MAGE), // TEST ME
 	ZEAH_BLASTMINE_NORTH(MASTER, new WorldPoint(1488, 3881, 0), ZEAH, "Northern part of the Lovakengj blast mine.", BRASSICAN_MAGE),
 	ZEAH_LOVAKITE_FURNACE(MASTER, new WorldPoint(1507, 3819, 0), ZEAH, "Next to the lovakite furnace in Lovakengj.", BRASSICAN_MAGE),
 	ZEAH_LOVAKENGJ_MINE(MASTER, new WorldPoint(1477, 3778, 0), ZEAH, "Next to mithril rock in the Lovakengj mine.", BRASSICAN_MAGE),
