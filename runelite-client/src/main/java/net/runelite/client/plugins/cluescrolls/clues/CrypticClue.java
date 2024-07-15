@@ -1455,7 +1455,7 @@ public class CrypticClue extends ClueScroll implements NpcClueScroll, ObjectClue
 			.text("Hopefully this set of armour will help you to keep surviving.")
 			.location(new WorldPoint(2982, 3336, 2))
 			.npc("Sir Vyvin")
-			.solution("Speak to Sir Vyvin, located in the White Knight's Castle, while wearing a white platebody and platelegs.")
+			.solution("Speak to Sir Vyvin, located on the second floor of the White Knight's Castle, while wearing a white platebody and platelegs.")
 			.build(),
 		CrypticClue.builder()
 			.text("The beasts retreat, for their Queen is gone; the song of this town still plays on. Dig near the birthplace of a blade, be careful not to melt your spade.")

@@ -110,7 +110,7 @@ public class CoordinateClue extends ClueScroll implements LocationClueScroll
 		.put(new WorldPoint(2920, 3403, 0), new CoordinateClueInfo("South-east of Taverley, near Lady of the Lake."))
 		.put(new WorldPoint(2594, 2899, 0), new CoordinateClueInfo("South-east of Feldip Hills, by the crimson swifts (AKS)."))
 		.put(new WorldPoint(2387, 3435, 0), new CoordinateClueInfo("West of Tree Gnome Stronghold, near the pen containing terrorbirds."))
-		.put(new WorldPoint(2512, 3467, 0), new CoordinateClueInfo("Baxtorian Falls (Bring rope)."))
+		.put(new WorldPoint(2513, 3468, 0), new CoordinateClueInfo("Baxtorian Falls (Bring rope)."))
 		.put(new WorldPoint(2381, 3468, 0), new CoordinateClueInfo("West of Tree Gnome Stronghold, north of the pen with terrorbirds."))
 		.put(new WorldPoint(3005, 3475, 0), new CoordinateClueInfo("Ice Mountain, west of Edgeville Monastery."))
 		.put(new WorldPoint(2585, 3505, 0), new CoordinateClueInfo("By the shore line north of the Coal Trucks."))
