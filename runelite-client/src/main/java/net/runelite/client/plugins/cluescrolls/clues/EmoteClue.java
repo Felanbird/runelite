@@ -127,10 +127,10 @@ public class EmoteClue extends ClueScroll implements LocationClueScroll
 		new EmoteClue("Do a jig at the barrows chest. Beware of double agents! Equip any full barrows set.", "Barrows chest", BARROWS_CHEST, new WorldPoint(3551, 9694, 0), DOUBLE_AGENT_141, JIG,
 			any("Any full barrows set",
 				all(
-					any("Ahrim's hood", item(AHRIMS_HOOD), range(AHRIMS_HOOD_100, AHRIMS_HOOD_0)),
-					any("Ahrim's staff", item(AHRIMS_STAFF), range(AHRIMS_STAFF_100, AHRIMS_STAFF_0)),
-					any("Ahrim's robetop", item(AHRIMS_ROBETOP), range(AHRIMS_ROBETOP_100, AHRIMS_ROBETOP_0)),
-					any("Ahrim's robeskirt", item(AHRIMS_ROBESKIRT), range(AHRIMS_ROBESKIRT_100, AHRIMS_ROBESKIRT_0))),
+					any("Ahrim's hood", item(AHRIMS_HOOD), range(AHRIMS_HOOD_100, AHRIMS_HOOD_0), item(ECHO_AHRIMS_HOOD_100), item(ECHO_AHRIMS_HOOD_75), item(ECHO_AHRIMS_HOOD_50), item(ECHO_AHRIMS_HOOD_25), item(ECHO_AHRIMS_HOOD_0)),
+					any("Ahrim's staff", item(AHRIMS_STAFF), range(AHRIMS_STAFF_100, AHRIMS_STAFF_0), item(ECHO_AHRIMS_STAFF), range(ECHO_AHRIMS_STAFF_100, ECHO_AHRIMS_STAFF_0)),
+					any("Ahrim's robetop", item(AHRIMS_ROBETOP), range(AHRIMS_ROBETOP_100, AHRIMS_ROBETOP_0), item(ECHO_AHRIMS_ROBETOP_100), item(ECHO_AHRIMS_ROBETOP_75), item(ECHO_AHRIMS_ROBETOP_50), item(ECHO_AHRIMS_ROBETOP_25), item(ECHO_AHRIMS_ROBETOP_0)),
+					any("Ahrim's robeskirt", item(AHRIMS_ROBESKIRT), range(AHRIMS_ROBESKIRT_100, AHRIMS_ROBESKIRT_0), item(ECHO_AHRIMS_ROBESKIRT_100), item(ECHO_AHRIMS_ROBESKIRT_75), item(ECHO_AHRIMS_ROBESKIRT_50), item(ECHO_AHRIMS_ROBESKIRT_25), item(ECHO_AHRIMS_ROBESKIRT_0))),
 				all(
 					any("Dharok's helm", item(DHAROKS_HELM), range(DHAROKS_HELM_100, DHAROKS_HELM_0)),
 					any("Dharok's greataxe", item(DHAROKS_GREATAXE), range(DHAROKS_GREATAXE_100, DHAROKS_GREATAXE_0)),
