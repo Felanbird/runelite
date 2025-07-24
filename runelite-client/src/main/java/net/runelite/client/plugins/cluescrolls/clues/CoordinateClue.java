@@ -593,6 +593,12 @@ public class CoordinateClue extends ClueScroll implements LocationClueScroll
 			.directions("South of Shayziens' Wall.")
 			.enemy(SARADOMIN_WIZARD)
 			.build(),
+		CoordinateClue.builder()
+			.itemId(ItemID.TRAIL_HARD_SEXTANT_EXP16)
+			.location(new WorldPoint(1321, 3323, 0))
+			.directions("South of Custodia Pass")
+			.enemy(SARADOMIN_WIZARD)
+			.build(),
 		// Elite
 		CoordinateClue.builder()
 			.itemId(ItemID.TRAIL_ELITE_SEXTANT_EXP5)
@@ -835,12 +841,7 @@ public class CoordinateClue extends ClueScroll implements LocationClueScroll
 			.directions("At the top of The Proudspire")
 			.enemy(ARMADYLEAN_OR_BANDOSIAN_GUARD)
 			.build(),
-		CoordinateClue.builder()
-			.itemId(ItemID.TRAIL_HARD_SEXTANT_EXP16)
-			.location(new WorldPoint(1321, 3323, 0))
-			.directions("South of Custodia Pass")
-			.enemy(SARADOMIN_WIZARD)
-			.build(),
+
 		// Master
 		CoordinateClue.builder()
 			.itemId(ItemID.TRAIL_CLUE_MASTER)
